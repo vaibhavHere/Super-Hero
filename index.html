@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css">
     <link rel="stylesheet" href="style.css">
     <title>SuperHero</title>
 </head>
+
 <body>
-    <input type="search" name="" id="search">
+    <nav>
+        <ul>
+            <li>SuperHero</li>
+            <li id='fav'>Likes <i class="fas fa-heart"></i></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section>
+            <div class="left-text">
+                <h1>Know your SuperHero!</h1>
+                <p>Over 700+ SuperHeroes and SuperVillians from all the Timelines, Search up their name, Get to know
+                    their strengths and weaknesses..Bringing it all to you with an API, unaltered and natural.</p>
+            </div>
+        </section>
+        <div class="search">
+            <p>Type in your Hero's name and we'll display the results for you!</p>
+            <div class="searchbox">
+                
+                <input type="search" placeholder="Search over here.." id="search">
+                <button id='btn'>Search</button>
+            </div>
+            <div id="output">
+            </div>
+            <div id="details">
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>

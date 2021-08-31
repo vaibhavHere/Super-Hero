@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    outline:none;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.content{
+    max-width: 1440px;
+    margin: auto;
+}
+nav{
+    background-color: rgb(66, 66, 66);
+padding: 0.5rem;
+position: sticky;
+top: 0;
+box-shadow: 0 -5px 20px rgb(0, 0, 0);
+}
+img{
+    display: block;
+}
+nav ul{
+max-width: 1440px;
+    justify-content:space-between ;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+ul li{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    list-style: none;
+}
+#fav{
+    color:#E54854;
+    padding:0.2rem 1rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    text-align: center;
+    padding:0.5rem 1rem;
+    line-height: 0;
+    transition: 0.5s;
+}
+#fav:hover{
+    background-color:#eb6873;
+    color: white;
+    cursor: pointer;
+}
+#fav,.btns i{
+color:#E54854;
+font-size: 1.2rem;
+}
+section{
+    max-height: 45rem;
+    min-height:30rem;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('assets/img/spidey.png'), linear-gradient(to top,rgb(221, 183, 183),white);
+    background-position:bottom right;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.left-text{
+    max-width: 50rem;
+    width: 60%;
+    margin: 10rem 0;
+    padding-left: 3rem;
+
+}
+section h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+section p,.search p,input{
+    line-height: 2.5rem;
+    color: rgb(73, 73, 73);
+    font-size: 1.1rem;
+}
+.search>p{
+    text-align: center;
+    padding: 0 1rem;
+}
+.search{
+    padding: 2rem 0;
+    min-height: calc(100vh - 3rem);
+}
+.searchbox{
+    display: flex;
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
+}
+input,#btn{
+    flex:1;
+    padding:0.2rem 1rem;
+    font-size: 1.2rem;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    margin: 0.25rem;
+    border-radius: 0.8rem;
+}
+#btn{
+    flex:0;
+    background-color:#4285F4;
+    color: white;
+    cursor: pointer;
+}
+#btn:hover,#btn:hover{
+    background-color:#3361aa;
+}
+::placeholder{
+    color: rgb(90, 90, 90);
+}
+.card{
+    overflow: hidden;
+    max-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(182, 182, 182);
+    /* width: 15rem; */
+    margin:1.3rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0.8rem;
+}
+#output{
+    margin: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat( auto-fit, minmax(20rem, 20rem) );
+}
+div.btns{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    justify-content: space-between;
+}
+.btns button{
+    flex:1;
+    padding:0.2rem 1rem;
+    font-size: 1rem;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    margin:0.5rem 1rem;
+    border-radius: 0.8rem;   
+}
+.btns i{
+    margin:0 1rem;
+    font-size: 1.6rem;
+}
+
+.btns i:hover,.btns i:active, .btns button:hover{
+    cursor: pointer;
+}
+.heroimg{
+    height: 65%;
+}
+.heroimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card p,.card h1{
+font-size: 1rem;
+line-height: 1.2rem;
+}
+.card h1{
+    font-weight: 500;
+}
+.text{
+    margin-top: auto;
+    margin-left: 1rem;
+}
+#details{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    max-width: 1024px;
+}
+#details .left-image{
+    flex: 1;
+    flex-basis: 50%;
+}
+.left-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#details .text{
+    flex: 1;
+    flex-basis: 50%;
+     
+}
+.strength{
+    width: 10rem;
+    display: inline-block;
+}
+meter{
+font-size: 1.5rem;
+}
+.details h1{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    font-weight: 600;
+}
+[name]{
+    font-weight: 600;
+}
+b{
+    color: black;
+font-weight: 500;
+}
