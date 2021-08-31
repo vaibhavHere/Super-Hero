@@ -31,7 +31,7 @@ max-width: 1440px;
 }
 ul li{
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     list-style: none;
 }
 #fav{
@@ -59,7 +59,7 @@ section{
     height:100vh;
     display: flex;
     align-items: center;
-    background-image: url('assets/img/spidey.png'), linear-gradient(to top,rgb(221, 183, 183),white);
+    background-image: url(assets/img/spidey.png), linear-gradient(to top,rgb(255, 255, 255),rgb(255, 255, 255), #00bcd440, #03a9f4);
     background-position:bottom right;
     background-repeat: no-repeat;
     background-size:contain;
