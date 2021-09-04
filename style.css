@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+body{
+    scroll-behavior: smooth;
+}
 .content{
     max-width: 1440px;
     margin: auto;
@@ -94,10 +97,16 @@ section p,.search p,input{
     max-width: 1024px;
     margin: auto;
 }
+#favpresent,#favabsent{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
 input,#btn{
     flex:1;
-    padding:0.2rem 1rem;
-    font-size: 1.2rem;
+    padding:0.2rem 0.8rem;
+    font-size: 1rem;
     background-color: rgb(235, 235, 235);
     border: none;
     margin: 0.25rem;
@@ -121,7 +130,6 @@ input,#btn{
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(182, 182, 182);
-    /* width: 15rem; */
     margin:1.3rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -152,6 +160,18 @@ div.btns{
 .btns i{
     margin:0 1rem;
     font-size: 1.6rem;
+}
+.oops{
+    text-align: center;
+    margin: 1rem;
+    font-weight: 300;
+font-size: 1.5rem;
+}
+.oops h1{
+    font-weight: 300;
+}
+.oops img{
+    width: 100%;
 }
 
 .btns i:hover,.btns i:active, .btns button:hover{
