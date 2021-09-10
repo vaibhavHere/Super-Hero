@@ -1,7 +1,8 @@
 const output = document.getElementById('output'),
     outputContainer = document.getElementById('outputContainer'),
     favTitle = document.getElementById('favTitle'),loading=document.getElementById('loading'),
-    btn=document.getElementById('btn')
+    btn=document.getElementById('btn'),
+    scroll=document.getElementById('scroll')
 
 var FavId, tempFav;
 
@@ -21,6 +22,7 @@ function copy(element) {
 }
 
 fav.onclick = () => {
+    scroll.click()
     reset();
     search.value = ''
     tempFav = copy(FavId)
@@ -32,8 +34,8 @@ fav.onclick = () => {
 }
 
 btn.onclick = search.onchange = async () => {
-    reset();
     if(search.value != ''){
+    reset();
     output.insertAdjacentHTML('beforeend','<img class="load" src="assets/img/loading.png">');
     try {
         result = await getData();
